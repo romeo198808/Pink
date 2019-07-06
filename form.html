@@ -48,19 +48,19 @@
 
           <fieldset class="form__group">
             <legend class="form__label">Ваши безбашенные достижения в путешествии</legend>
-            <input class="form__checkbox" type="checkbox"  value="" checked>Сделал селфи с акулой
-            <input class="form__checkbox" type="checkbox"  value="" checked>Обгорел на пляже
-            <input class="form__checkbox" type="checkbox"  value="">Видел Чака Норриса
-            <input class="form__checkbox" type="checkbox"  value="">Накупил сувениров
-            <input class="form__checkbox" type="checkbox"  value="" checked>Удержал башню
-            <input class="form__checkbox" type="checkbox"  value="">Разгромил отель
+            <input class="form__checkbox" type="checkbox" name="progress" value="check1" checked>Сделал селфи с акулой
+            <input class="form__checkbox" type="checkbox" name="progress" value="check2" checked>Обгорел на пляже
+            <input class="form__checkbox" type="checkbox" name="progress" value="check3">Видел Чака Норриса
+            <input class="form__checkbox" type="checkbox" name="progress" value="check4">Накупил сувениров
+            <input class="form__checkbox" type="checkbox" name="progress" value="check5" checked>Удержал башню
+            <input class="form__checkbox" type="checkbox" name="progress" value="check6">Разгромил отель
           </fieldset>
 
           <fieldset class="form__group">
             <legend class="form__label visually-hidden">Контактная информация</legend>
             <p class="form__wrap">
               <label for="phone" class="form__label">Номер телефона</label>
-              <input class="form__input" type="text"  value="" id="phone">
+              <input class="form__input" type="tel"  value="" id="phone">
             </p>
             <p class="form__wrap">
               <label for="email" class="form__label">Адрес почты</label>
@@ -70,10 +70,16 @@
 
           <fieldset class="form__group">
             <legend class="form__label">Скаким приложением путешествовали?</legend>
-            <input class="form__radio" type="radio"  value="" checked>Pink для iOs
-            <input class="form__radio" type="radio"  value="">Pink для Android
-            <input class="form__radio" type="radio"  value="">Windows Phone
+            <input class="form__radio" type="radio" name="applications" value="iOs" checked>Pink для iOs
+            <input class="form__radio" type="radio" name="applications" value="Android">Pink для Android
+            <input class="form__radio" type="radio" name="applications" value="Windows">Windows Phone
           </fieldset>
+
+          <fieldset class="form__group">
+            <legend class="form__label">Опишите свои эмоции</legend>
+            <textarea name="emotions" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          
         </form>
       </section>
     </main>

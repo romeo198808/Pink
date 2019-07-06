@@ -29,18 +29,21 @@
           Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!
         </p>
         <form class="journey-form " action="https://echo.htmlacademy.ru" method="post">
-          <p class="journey-form__wrap">
-            <label class="journey-form__label" for="surname">Фамилия</label>
-            <input class="journey-form__input" type="text" value="" id="surname">
-          </p>
-          <p class="journey-form__wrap">
-            <label class="journey-form__label" for="name">Имя</label>
-            <input class="journey-form__input" type="text" value="" id="name">
-          </p>
-          <p class="journey-form__wrap">
-            <label class="journey-form__label" for="patronymic">Отчество</label>
-            <input class="journey-form__input" type="text" value="" id="patronymic">
-          </p>
+
+          <fieldset class="journey-form__group">
+            <legend class="journey-form__label visually-hidden">Личные данные</legend>
+            <p class="journey-form__wrap">
+              <label class="journey-form__label" for="surname">Фамилия</label>
+              <input class="journey-form__input" type="text" value="" id="surname" placeholder="Укажите фамилию*">
+            </p>
+            <p class="journey-form__wrap">
+              <label class="journey-form__label" for="name">Имя</label>
+              <input class="journey-form__input" type="text" value="" id="name" placeholder="Введите ваше имя*">
+            </p>
+            <p class="journey-form__wrap">
+              <label class="journey-form__label" for="patronymic">Отчество</label>
+              <input class="journey-form__input" type="text" value="" id="patronymic" placeholder="Ну и отчество тоже">
+            </p>
 
           <fieldset class="journey-form__group">
             <legend class="journey-form__label">Ваши безбашенные достижения в путешествии</legend>

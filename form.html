@@ -12,9 +12,9 @@
         <button type="button" class="main-nav__toggle">Открыть меню</button>
         <button type="button" class="main-nav__close">Закрыть меню</button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html" class="main-nav__link">Конкурс</a></li>
+          <li class="main-nav__item"><span class="main-nav__link">Конкурс</span></li>
           <li class="main-nav__item"><a href="#" class="main-nav__link">Html Academy</a></li>
         </ul>
       </nav>
@@ -60,11 +60,11 @@
             <legend class="form__label visually-hidden">Контактная информация</legend>
             <p class="form__wrap">
               <label for="phone" class="form__label">Номер телефона</label>
-              <input class="form__input" type="tel"  value="" id="phone">
+              <input class="form__input" type="tel"  value="" id="phone" placeholder="Номер, пожалуйста">
             </p>
             <p class="form__wrap">
               <label for="email" class="form__label">Адрес почты</label>
-              <input class="form__input" type="email"  value="" id="email">
+              <input class="form__input" type="email"  value="" id="email" placeholder="Введите почту*">
             </p>
           </fieldset>
 
@@ -79,10 +79,28 @@
             <legend class="form__label">Опишите свои эмоции</legend>
             <textarea name="emotions" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          
+
+          <button type="submit" name="button" class="form__button">Отправить форму</button>
+
+          <p class="form__necessarily">
+            <span>*</span>-Обязательные поля
+          </p>
         </form>
       </section>
     </main>
+
+    <footer class="page-footer">
+      <img src="" alt="Логотип Pink" class="page-footer__logo logo">
+      <ul class="page-footer__list social__list">
+        <li class="social__item"><a href="#" class="social__link">Twitter</a></li>
+        <li class="social__item"><a href="#" class="social__link">Facebook</a></li>
+        <li class="social__item"><a href="#" class="social__link">Youtube</a></li>
+      </ul>
+      <p class="page-footer__developed developed">
+        Разработано
+        <a href="https://htmlacademy.ru/">htmlacademy.ru</a>
+      </p>
+    </footer>
 
   </body>
 </html>

@@ -1,0 +1,25 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "Проект Pink",
+  "main": "gulpfile.js",
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint .",
+    "test": "npm run editorconfig"
+  },
+  "editorconfig-cli": [
+    "*.json",
+    "*.html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romeo198808/Pink.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/romeo198808/Pink/issues"
+  },
+  "homepage": "https://github.com/romeo198808/Pink#readme"
+}

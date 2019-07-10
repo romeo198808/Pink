@@ -45,3 +45,44 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   color: #ffffff;
 }
+.author {
+  display: block;
+
+  text-align: center;
+
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: bold;
+  color: #000000;
+}
+.slider__control {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.slider__control__item {
+  width: 25px;
+  height: 25px;
+
+  text-align: center;
+
+  line-height: 25px;
+}
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+  background-color: #bec2c7;
+  &--active {
+    border: 2px solid #283645;
+    width: 10px;
+    height: 10px;
+
+    background-color: #ffffff;
+  }
+}

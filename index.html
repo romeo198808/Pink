@@ -10,12 +10,12 @@
 
     <header class="page-header">
       <div class="page-header__wrap">
-        <a href="#" class="page-header__logo logo-mobile"><img src="img/logotype-white-mobile.png" alt="Логотип Pink" class="page-header_logo-img logo-img" width="75" height="25"></a>
+        <a href="#" class="page-header__logo logo-mobile"><img src="img/pink-logo.svg" alt="Логотип Pink" class="page-header_logo-img logo-img" width="75" height="25"></a>
         <button type="button" class="page-header__button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrap">
-          <a href="#" class="page-header__logo logo-mobile"><img src="img/logotype-white-mobile.png" alt="Логотип Pink" class="page-header_logo-img logo-img" width="75" height="25"></a>
+          <a href="#" class="page-header__logo logo-mobile"><img src="img/img/pink-logo.svg" alt="Логотип Pink" class="page-header_logo-img logo-img" width="75" height="25"></a>
           <button type="button" class="button__close"><span class="visually-hidden">Закрыть меню</span></button>
         </div>
         <ul class="main-nav__list">
@@ -88,7 +88,24 @@
         <h2 class="visually-hidden">Наш прайс-лист</h2>
         <ul class="price__list slider">
           <li class="price__item slider__item">
-            <p class="price__package">Стандарт <br>3,99 USD </p>
+            <p class="price__package">База <span>1,99 USD</span> </p>
+            <table class="price__table table">
+              <tr>
+                <td class="table__name">Розовый фильтр</td>
+                <td class="table__active"></td>
+              </tr>
+              <tr>
+                <td class="table__name">Смайлики</td>
+                <td class="table__noactive"></td>
+              </tr>
+              <tr>
+                <td class="table__name">Комментарии</td>
+                <td class="table__noactive"></td>
+              </tr>
+            </table>
+          </li>
+          <li class="price__item slider__item">
+            <p class="price__package">Стандарт <span>3,99 USD</span> </p>
             <table class="price__table table">
               <tr>
                 <td class="table__name">Розовый фильтр</td>
@@ -104,8 +121,25 @@
               </tr>
             </table>
           </li>
+          <li class="price__item slider__item">
+            <p class="price__package">Анлим <span>9,99 USD</span> </p>
+            <table class="price__table table">
+              <tr>
+                <td class="table__name">Розовый фильтр</td>
+                <td class="table__active"></td>
+              </tr>
+              <tr>
+                <td class="table__name">Смайлики</td>
+                <td class="table__active"></td>
+              </tr>
+              <tr>
+                <td class="table__name">Комментарии</td>
+                <td class="table__active"></td>
+              </tr>
+            </table>
+          </li>
         </ul>
-        <ul class="slider__control">
+        <ul class="price__control slider__control">
           <li class="slider__control__item"><button type="button" class="slider__toggle slider__toggle--active"></button></li>
           <li class="slider__control__item"><button type="button" class="slider__toggle"></button></li>
           <li class="slider__control__item"><button type="button" class="slider__toggle"></button></li>

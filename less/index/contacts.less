@@ -1,0 +1,64 @@
+.contacts {
+  position: relative;
+}
+.contacts__text {
+  margin: 0;
+  margin-top: 40px;
+
+  font-size: 24px;
+  line-height: 30px;
+
+  text-align: center;
+
+}
+.contacts__wrap {
+  position: relative;
+  z-index: 20;
+
+  margin-top: 40px;
+}
+.contacts__item {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0 30px;
+
+  font-size: 24px;
+  line-height: 30px;
+  color: #d22856;
+
+  text-align: center;
+  & b {
+    display: block;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: @color-menu;
+  }
+  & a {
+    display: block;
+
+    font-size: 18px;
+    line-height: 24px;
+    color: #d22856;
+    text-decoration: none;
+  }
+}
+.contacts__map {
+  position: relative;
+  z-index: 10;
+
+  margin-top: -75px;
+}
+.contacts__marker {
+  position: absolute;
+  left: 142px;
+  bottom: 80px;
+  z-index: 30;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: #d22856;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+}

@@ -1,0 +1,40 @@
+.available-systems {
+  width:235px;
+  min-height: 125px;
+  margin: 0 auto;
+}
+.available-systems__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+.available-systems__item {
+  width: 70px;
+  height: 70px;
+
+  &:first-child {
+    background-image: url("../img/apple-logo.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  &:nth-child(2) {
+    background-image: url("../img/android-logo.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  &:nth-child(3) {
+    background-image: url("../img/microsoft-logo.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+}
+.available-systems__desc {
+  line-height: 24px;
+  color: #ffffff;
+
+  text-align: center;
+}

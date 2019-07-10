@@ -1,12 +1,14 @@
-.page-header {
+.page-header__wrap {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 20;
 
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 20px;
+  box-sizing: border-box;
 
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -19,4 +21,5 @@
   background-image: url("../img/menu-burger.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  cursor: pointer;
 }

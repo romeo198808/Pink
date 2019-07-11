@@ -3,15 +3,20 @@ body {
 
   margin: 0;
   padding: 0;
-  width: 320px;
+  width: 100vw;
   margin-left: auto;
   margin-right: auto;
 
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 30px;
+  font-style: normal;
+  font-size: 4.375vw;
+  line-height: 9.375vw;
   font-weight: 300;
   color:#283645;
+}
+img {
+  width: 100%;
+  height: auto;
 }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -32,15 +37,15 @@ input[type="radio"].visually-hidden {
 }
 .button {
   display: block;
-  width: 280px;
-  height: 50px;
+  width: 87.5%;
+  height: 15.625vw;
 
   border: 2px solid #ffffff;
-  border-radius: 25px;
+  border-radius: 7.8125vw;
   text-align: center;
 
-  font-size: 18px;
-  line-height: 50px;
+  font-size: 5.625vw;
+  line-height: 15.625vw;
   text-decoration: none;
   font-weight: bold;
   color: #ffffff;
@@ -50,8 +55,8 @@ input[type="radio"].visually-hidden {
 
   text-align: center;
 
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 5.625vw;
+  line-height: 7.8125vw;
   font-weight: bold;
   color: #000000;
 }
@@ -59,20 +64,21 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin: 0;
   padding: 0;
+  width: 23.4375vw;
 
   list-style: none;
 }
 .slider__control__item {
-  width: 25px;
-  height: 25px;
+  width: 7.8125vw;
+  height: 7.8125vw;
 
   text-align: center;
 
-  line-height: 25px;
+  line-height: 7.8125vw;
 }
 .slider__toggle {
-  width: 6px;
-  height: 6px;
+  width: 1.875vw;
+  height: 1.875vw;
   padding: 0;
 
   border: none;
@@ -80,8 +86,8 @@ input[type="radio"].visually-hidden {
   background-color: #bec2c7;
   &--active {
     border: 2px solid #283645;
-    width: 10px;
-    height: 10px;
+    width: 3.125vw;
+    height: 3.125vw;
 
     background-color: #ffffff;
   }

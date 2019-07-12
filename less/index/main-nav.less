@@ -2,8 +2,9 @@
   position: relative;
   left: 0;
   top: 0;
+  z-index: 30;
 
-  display: none;
+  display: block;
   width: auto;
 
   background-color: @color-menu;
@@ -11,8 +12,10 @@
 .main-nav__wrap {
   display: flex;
   justify-content: space-between;
-  padding: 6.25%;
-  min-height: 65px;
+  padding: 20px;
+  width: 280px;
+  min-height: 25px;
+  margin: 0 auto;
 
   border-bottom: 1px solid #000000;
 }
@@ -25,7 +28,8 @@
 .main-nav__item {
   box-sizing: border-box;
   width: 100%;
-  padding: 6.25%;
+  min-height: 25px;
+  padding: 20px;
 
   text-align: center;
 

@@ -1,20 +1,24 @@
 .price {
-  overflow: hidden;
+  width: auto;
+  margin: 0 auto;
+
+  overflow-x: hidden;
+  background-color: #f2f2f2;
 }
 .price__list {
   position: relative;
-  left: 6.875vw;
+  left: 12%;
 
   display: flex;
   margin: 0;
   padding: 0;
-  width: 260.3125vw;
+  width: 833px;
 
   list-style: none;
 }
 .price__item {
   display: block;
-  width: 85.9375vw;
+  width: 275px;
 
   border:  2px solid #e5e5e5;
   border-top: none;
@@ -29,12 +33,12 @@
 }
 .price__package {
   margin: 0;
-  padding: 6.25vw;
+  padding: 20px;
 
   text-align: center;
 
-  font-size: 5.625vw;
-  line-height: 9.375vw;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
@@ -43,42 +47,40 @@
   & span {
     display: block;
 
-    font-size: 7.5vw;
+    font-size: 24px;
     font-weight: 300;
   }
 
 }
 .price__table {
 
-  width: 85.9375vw;
+  width: 275px;
 
   border-collapse: collapse;
 }
 .table__name {
-  padding: 0 6.25vw;
+  padding: 0 20px;
 
   text-transform: uppercase;
   font-weight: 400;
-  line-height: 18,75vw;
+  line-height: 60px;
 
   border-bottom: 2px solid #e5e5e5;
 }
 .table__active {
-  width: 21.875vw;
+  width: 70px;
   padding: 0;
 
   background-image: url("../img/yes.svg");
-  background-size: 7vw;
   background-repeat: no-repeat;
   background-position: center center;
   border-bottom: 2px solid #e5e5e5;
 }
 .table__noactive {
-  width: 21.875vw;
+  width: 70px;
   padding: 0;
 
   background-image: url("../img/no.svg");
-  background-size: 5vw;
   background-repeat: no-repeat;
   background-position: center center;
   border-bottom: 2px solid #e5e5e5;
@@ -86,7 +88,7 @@
 .price__control__wrap {
   display: flex;
   align-items: center;
-  height: 31.25vw;
+  height: 100px;
 
   background-color: #f2f2f2;
 }

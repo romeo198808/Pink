@@ -41,3 +41,14 @@
   font-weight: bold;
   color: #ffffff;
 }
+@media (min-width: @tablet) {
+  .button__close {
+    &::after,
+    &::before {
+      top: 35px;
+    }
+    .button {
+      width: 300px;
+    }
+  }
+}

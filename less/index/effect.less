@@ -1,0 +1,42 @@
+.effect {
+  display: none;
+}
+@media (min-width:@tablet) {
+  .effect {
+    position: relative;
+    z-index: 20;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 660px;
+    margin: 0 auto;
+    margin-top: -30px;
+    padding: 60px 20px;
+
+    background-color: #ffffff;
+
+  }
+  .effect__img {
+    width: 238px;
+  }
+  .effect__text {
+    width: 320px;
+    margin: 0;
+    & b {
+      display: block;
+      width: 175px;
+      margin-bottom: 10px;
+
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+  .effect__link {
+    display: block;
+
+    color: #dd5d80;
+  }
+
+}

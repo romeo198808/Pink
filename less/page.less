@@ -45,3 +45,21 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
   color: #000000;
 }
+.author--desc {
+  display: none;
+}
+.hit {
+  background-image: url("../img/hit.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+@media (min-width: @tablet) {
+  .author--desc {
+    display: block;
+    order: 3;
+
+    font-weight: 400;
+
+    text-align: center;
+  }
+}

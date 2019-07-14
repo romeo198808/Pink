@@ -4,7 +4,7 @@
   top: 0;
   z-index: 30;
 
-  display: block;
+  display: none;
   width: auto;
 
   background-color: @color-menu;
@@ -13,11 +13,12 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  width: 280px;
+  width: 100%;
   min-height: 25px;
   margin: 0 auto;
 
   border-bottom: 1px solid #000000;
+  box-sizing: border-box;
 }
 .main-nav__list {
   margin: 0;
@@ -37,9 +38,17 @@
   border-bottom: 1px solid #000000;
 }
 .main-nav__link {
+  display: block;
+
   font-size: 18px;
   line-height: 22px;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
   color: #ffffff;
+}
+@media (min-width: @tablet) {
+  .main-nav__wrap {
+    min-height: 110px;
+  }
 }

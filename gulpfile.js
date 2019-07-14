@@ -13,7 +13,7 @@ gulp.task("less", async function() {
     .pipe(less())
     .pipe(postcss([
       autoprefixer({
-        browsers: ["last 5 versions"]
+        browsers: ["last 10 versions"]
       })
     ]))
     .pipe(gulp.dest("css"))

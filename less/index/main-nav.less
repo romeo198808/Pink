@@ -52,3 +52,38 @@
     min-height: 110px;
   }
 }
+@media (min-width: @desktop) {
+  .main-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    background-color: transparent;
+  }
+  .main-nav__wrap {
+    width: 150px;
+    min-height: 110px;
+    padding: 0;
+    margin: 0;
+  }
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 625px;
+  }
+  .main-nav__item {
+    display: inline-block;
+    width: auto;
+    padding: 0;
+
+    border: none;
+  }
+  .main-nav__link {
+    line-height: 110px;
+    font-weight: 400;
+    text-transform: none;
+  }
+}

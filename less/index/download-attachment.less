@@ -54,11 +54,32 @@
   .download-attachment__wrap2 {
     position: absolute;
     left: 0;
-    top: 360px;
+    top: 390px;
     z-index: 20;
 
     width: 340px;
 
     background-color: transparent;
   }
+}
+@media (min-width: @desktop) {
+    .img__desctop {
+      display: block;
+    }
+    .img__tablet {
+      display: none;
+    }
+    .img__text {
+      left: 170px;
+
+      width: 300px;
+
+      font-size: 50px;
+      line-height: 60px;
+      font-weight: 300;
+    }
+    .download-attachment__wrap2 {
+      left: 150px;
+      top: 420px;
+    }
 }

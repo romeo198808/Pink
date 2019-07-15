@@ -93,3 +93,34 @@
     bottom: 270px;
   }
 }
+@media (min-width: @desktop) {
+  .contacts {
+    width: 1200px;
+  }
+  .contacts__text {
+    width: 500px;
+    margin-top: 75px;
+
+    font-size: 50px;
+    line-height: 65px;
+  }
+  .contacts__wrap {
+    margin-top: 60px;
+  }
+  .contacts__item {
+    margin-bottom: 25px;
+    & b {
+      margin-bottom: 20px;
+    }
+  }
+  .contacts__map--tablet {
+    display: none;
+  }
+  .contacts__map--desktop {
+    display: block;
+  }
+  .contacts__marker {
+    left: 580px;
+    bottom: 400px;
+  }
+}

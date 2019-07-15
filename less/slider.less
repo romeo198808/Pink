@@ -30,3 +30,54 @@
     background-color: #ffffff;
   }
 }
+.slider__button {
+ display: none;
+}
+@media (min-width: @desktop) {
+  .slider__button {
+    position: absolute;
+
+    display: block;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+
+    background-color: transparent;
+    border: none;
+    &::after,
+    &::before {
+      content: "";
+
+      position: absolute;
+
+      width: 30px;
+      height: 2px;
+
+      background-color: #bec2c7;
+    }
+    &--next {
+      right: 130px;
+      top: 65px;
+      &::after {
+        transform: rotate(45deg);
+        top: 4px;
+      }
+      &::before {
+        transform: rotate(-45deg);
+        bottom: 4px
+      }
+    }
+    &--previous {
+      left: 130px;
+      top: 65px;
+      &::after {
+        transform: rotate(45deg);
+        bottom: 4px;
+      }
+      &::before {
+        transform: rotate(-45deg);
+        top: 4px
+      }
+    }
+  }
+}

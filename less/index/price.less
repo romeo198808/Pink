@@ -1,7 +1,7 @@
 .price {
   width: auto;
   margin: 0 auto;
-  
+
 
   overflow-x: hidden;
   background-color: #f2f2f2;
@@ -143,5 +143,35 @@
   }
   .price__control {
     display: none;
+  }
+}
+@media (min-width: @desktop) {
+  .price__list {
+    width: 940px;
+  }
+  .price__package {
+
+  }
+  .price__item {
+    width: 232px;
+  }
+  .price__item--tablet {
+    & .table__name {
+      padding: 0 23px;
+
+      font-size: 18px;
+      line-height: 60px;
+    }
+  }
+  .price__table {
+    width: 232px;
+  }
+  .table__active,
+  .table__noactive {
+    width: 232px;
+    height: 60px;
+  }
+  .price__control__wrap {
+    height: 95px;
   }
 }

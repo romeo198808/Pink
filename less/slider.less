@@ -29,6 +29,13 @@
 
     background-color: #ffffff;
   }
+  &:hover,
+  &:focus {
+    background-color: #7e868f;
+  }
+  &:active {
+    opacity: 0.1;
+  }
 }
 .slider__button {
  display: none;
@@ -53,7 +60,7 @@
       width: 30px;
       height: 2px;
 
-      background-color: #bec2c7;
+      background-color: @color-menu;
     }
     &--next {
       right: 130px;
@@ -78,6 +85,14 @@
         transform: rotate(-45deg);
         top: 4px
       }
+    }
+    opacity: 0.3;
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+    &:active {
+      opacity: 0.1;
     }
   }
 }

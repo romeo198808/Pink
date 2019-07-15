@@ -25,6 +25,10 @@
   &::before {
     transform: rotate(-45deg);
   }
+  &:hover,
+  &:focus {
+    opacity: 0.3;
+  }
 }
 .button {
   display: block;
@@ -40,6 +44,15 @@
   text-decoration: none;
   font-weight: bold;
   color: #ffffff;
+  &:hover,
+  &:focus {
+    color: #d22856;
+
+    background-color: #ffffff;
+  }
+  &:active span {
+    opacity: 0.3;
+  }
 }
 @media (min-width: @tablet) {
   .button__close {

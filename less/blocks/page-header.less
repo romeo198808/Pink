@@ -1,6 +1,6 @@
 .page-header {
   position: absolute;
-  top: -13px;
+  z-index: 20;
 
   width: 100%;
   min-height: 66px;
@@ -27,7 +27,7 @@
     fill: #ffffff;
   }
 }
-@media (min-width: @mobile) and (max-width: @desktop) {
+@media (max-width: @desktop) {
   .page-header--nojs .page-header__wrap {
     background-color: @color-basic;
     border-bottom: 1px solid #000000;

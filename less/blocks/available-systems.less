@@ -1,0 +1,53 @@
+.available-systems {
+  width: 300px;
+}
+.available-systems__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 45px;;
+
+  list-style: none;
+}
+.available-systems__item {
+  width: 50px;
+  height: 60px;
+  &:first-child {
+    background-image: url("../img/apple.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+  &:nth-child(2) {
+    background-image: url("../img/android.svg");
+    background-repeat: no-repeat;
+    background-position: center 10px;
+  }
+  &:last-child {
+    background-image: url("../img/microsoft.svg");
+    background-repeat: no-repeat;
+    background-position: center 16px;
+  }
+}
+.available-systems__desc {
+  margin: 0;
+  margin-top: 35px;
+
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color:#ffffff;
+}
+@media (max-width: @tablet) {
+  .available-systems__desc {
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 25px;
+
+    font-size: 14px;
+  }
+}
+@media (min-width: @desktop) {
+  .available-systems__desc {
+    margin-top: 55px;
+  }
+}

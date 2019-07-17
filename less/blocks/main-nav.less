@@ -8,7 +8,7 @@
 .main-nav__link {
   position: relative;
 
-  display: block;
+  display: inline-block;
 
   font-size: 18px;
   line-height: 32px;
@@ -25,10 +25,10 @@
     opacity: 0.3;
   }
   &--active {
-
+    border-bottom: 2px solid #ffffff;
   }
 }
-@media (min-width: @mobile) and (max-width: @desktop) {
+@media (max-width: @desktop) {
   .main-nav__toggle {
     position: absolute;
     top: 22px;

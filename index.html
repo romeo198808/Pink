@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Pink Главная страница</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-
   </head>
   <body>
 
@@ -12,7 +12,6 @@
       <div class="page-header__wrap">
         <a href="#" class="page-header__logo">
           <xml version="1.0" encoding="utf-8">
-          <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           	 viewBox="0 0 74.43 22.86" style="enable-background:new 0 0 74.43 22.86;" xml:space="preserve" width="75" height="22">
           <style type="text/css">
@@ -32,8 +31,6 @@
           		c0.22,0.29,0.35,0.55,0.35,0.93c0,0.68-0.58,1.29-1.29,1.29c-0.48,0-0.81-0.26-1.03-0.58l-8.4-10.46l-4.86,4.86v4.89
           		c0,0.71-0.58,1.29-1.29,1.29c-0.68,0-1.26-0.58-1.26-1.29L56.3,1.29L56.3,1.29z"/>
           </g>
-          </svg>
-
         </a>
       </div>
       <nav class="main-nav main-nav--closed">
@@ -53,7 +50,13 @@
 
       <section class="download-attachment">
         <h2 class="visually-hidden">Скачать приложение</h2>
-        <div class="download-attachment__img"></div>
+        <div class="download-attachment__wrap__img">
+          <picture>
+            <source media="(min-width: 1000px)" srcset="img/phone-desktop.jpg, img/phone-desktopx2.jpg 2x">
+            <source media="(min-width: 700px)" srcset="img/phone-tablet.jpg, img/phone-tabletx2.jpg 2x">
+            <img class="download-attachment__img" src="img/phone-mobile.jpg" srcset="img/phone-mobilex2.jpg 2x" alt="Фон">
+          </picture>
+        </div>
         <div class="download-attachment__wrap">
           <p class="download-attachment__text">Взгляните на жизнь иначе!</p>
           <a href="#" class="download-attachment__button button"><span>Скачать приложение</span></a>
@@ -69,6 +72,7 @@
       </section>
 
       <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
         <p class="advantages__text advantages__text--1">Устали от серости мегаполиса?</p>
         <p class="advantages__text advantages__text--2">Нам есть, что вам предложить!</p>
         <ul class="advantages__list">
@@ -156,6 +160,7 @@
       </section>
 
       <section class="contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
         <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
         <ul class="contacts__list">
           <li class="contacts__item">

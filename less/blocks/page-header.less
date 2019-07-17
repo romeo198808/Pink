@@ -1,22 +1,54 @@
 .page-header {
-  position: relative;
+  position: absolute;
+  top: -13px;
+
+  width: 100%;
+  min-height: 66px;
 
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 3px red;
 }
 .page-header__wrap {
+  width: auto;
   padding: 22px 20px;
 }
 .page-header__logo {
   display: block;
   width: 75px;
   height: 22px;
+  &:hover .st0,
+  &:focus .st0   {
+    fill: #d22856;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  &:active .st0 {
+    fill: #ffffff;
+  }
 }
-.page-header--nojs .page-header__wrap {
-  background-color: @color-basic;
-  border-bottom: 1px solid #000000;
+@media (min-width: @mobile) and (max-width: @desktop) {
+  .page-header--nojs .page-header__wrap {
+    background-color: @color-basic;
+    border-bottom: 1px solid #000000;
+  }
+  .page-header--nojs {
+    position: relative;
+    top: 0;
+  }
+  .page-header--opened {
+    position: relative;
+    top: 0;
+  }
+  .page-header__wrap--opened {
+    background-color: @color-basic;
+    border-bottom: 1px solid #000000;
+  }
 }
 @media (min-width: @tablet) {
+  .page-header {
+    min-height: 109px;
+  }
   .page-header__wrap {
     height: 40px;
     padding: 27px 20px 42px;
@@ -30,10 +62,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 130px;
   }
   .page-header__wrap {
     width: 150px;
+    margin-left: 130px;
   }
   .page-header--nojs .page-header__wrap {
     background-color: transparent;

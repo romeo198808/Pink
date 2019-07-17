@@ -1,46 +1,22 @@
-var buttonMenu = document.querySelector('.page-header__button');
-var buttonClose = document.querySelector('.button__close');
-var headerWrap = document.querySelector('.page-header__wrap');
+var mainNavToggle = document.querySelector('.main-nav__toggle');
 var mainNav = document.querySelector('.main-nav');
-var priceList = document.querySelector('.price__list');
-var slide1 = document.querySelector('.slider__toggle--1');
-var slide2 = document.querySelector('.slider__toggle--2');
-var slide3 = document.querySelector('.slider__toggle--3');
+var header = document.querySelector('header');
+var pageHeaderWrap = document.querySelector('.page-header__wrap');
 
+header.classList.remove('page-header--nojs');
 
-buttonMenu.addEventListener('click', function(evt) {
-evt.preventDefault();
-console.log("ПРивет");
-headerWrap.classList.add('hide');
-mainNav.classList.add('show');
-});
-
-buttonClose.addEventListener('click', function(evt) {
-evt.preventDefault();
-headerWrap.classList.remove('hide');
-mainNav.classList.remove('show');
-});
-
-slide1.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  priceList.style.left="12%";
-  slide1.classList.add('slider__toggle--active');
-  slide2.classList.remove('slider__toggle--active');
-  slide3.classList.remove('slider__toggle--active');
-});
-
-slide2.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  priceList.style.left="-45%";
-  slide2.classList.add('slider__toggle--active');
-  slide1.classList.remove('slider__toggle--active');
-  slide3.classList.remove('slider__toggle--active');
-});
-
-slide3.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  priceList.style.left="-112%";
-  slide3.classList.add('slider__toggle--active');
-  slide2.classList.remove('slider__toggle--active');
-  slide1.classList.remove('slider__toggle--active');
+mainNavToggle.addEventListener('click', function(e) {
+  e.preventDefault();
+  if (mainNav.classList.contains('main-nav--closed')) {
+    mainNav.classList.remove('main-nav--closed');
+    mainNav.classList.add('main-nav--opened');
+    pageHeaderWrap.classList.add('page-header__wrap--opened');
+    header.classList.add('page-header--opened');
+  }
+  else {
+    mainNav.classList.remove('main-nav--opened');
+    mainNav.classList.add('main-nav--closed');
+    pageHeaderWrap.classList.remove('page-header__wrap--opened');
+    header.classList.remove('page-header--opened');
+  }
 });

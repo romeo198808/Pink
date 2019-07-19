@@ -16,16 +16,22 @@
   display: block;
   width: 75px;
   height: 22px;
-  &:hover .st0,
-  &:focus .st0   {
+  &:hover path,
+  &:focus path {
     fill: #d22856;
   }
   &:active {
     opacity: 0.3;
   }
-  &:active .st0 {
+  &:active path {
     fill: #ffffff;
   }
+}
+.logo-tablet {
+  display: none;
+}
+.logo-desktop {
+  display: none;
 }
 @media (max-width: @desktop) {
   .page-header--nojs .page-header__wrap {
@@ -55,6 +61,13 @@
   }
   .page-header__logo {
     width: 147px;
+
+  }
+  .logo-tablet {
+    display: block;
+  }
+  .logo-mobile {
+    display: none;
   }
 }
 @media (min-width: @desktop) {
@@ -70,5 +83,11 @@
   .page-header--nojs .page-header__wrap {
     background-color: transparent;
     border: none;
+  }
+  .logo-tablet {
+    display: none;
+  }
+  .logo-desktop {
+    display: block;
   }
 }

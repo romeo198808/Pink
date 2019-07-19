@@ -5,6 +5,8 @@ var less = require("gulp-less");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var svgo = require("gulp-svgo");
+var cwebp = require("gulp-cwebp");
 var server = require("browser-sync").create();
 
 gulp.task("less", async function() {
@@ -13,7 +15,7 @@ gulp.task("less", async function() {
     .pipe(less())
     .pipe(postcss([
       autoprefixer({
-        browsers: ["last 10 versions"]
+        browsers: ["last 5 versions"]
       })
     ]))
     .pipe(gulp.dest("css"))
@@ -31,6 +33,20 @@ gulp.task("serve", async function() {
 
   gulp.watch("less/**/*.less", gulp.series("less")).on("change", server.reload);
   gulp.watch("*.html").on("change", server.reload);
-})
+  gulp.watch("imgwork/svg/*.svg", gulp.series("images")).on("change", server.reload);
+  gulp.watch("imgwork/jpgpng/*", gulp.series("cwebp")).on("change", server.reload);
+});
 
-gulp.task("go", gulp.series("serve", "less"));
+gulp.task("images", async function() {
+  return gulp.src("imgwork/svg/*.svg")
+    .pipe(svgo())
+    .pipe(gulp.dest("img"));
+});
+
+gulp.task("cwebp", async function() {
+  gulp.src("imgwork/jpgpng/*")
+    .pipe(cwebp())
+    .pipe(gulp.dest("img"));
+});
+
+gulp.task("go", gulp.series("serve", "less", "images", "cwebp"));

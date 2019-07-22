@@ -1,0 +1,155 @@
+.price {
+  padding-bottom: 70px;
+
+  background-color: #f2f2f2;
+}
+.price-wrap {
+  width: 620px;
+  margin: 0 auto;
+}
+.price__table {
+  border-collapse: collapse;
+}
+.price__package {
+  position: relative;
+
+  width: 122px;
+  padding: 15px;
+
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: @color-basic;
+  border: 2px solid #e7e7e7;
+  & span {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+  }
+  &--clean {
+    border: none;
+    background-color: transparent;
+  }
+  &--new {
+    background-image: url("../img/hit.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+  }
+}
+.price__cell {
+  width: 152px;
+
+  line-height: 46px;
+  font-weight: 400;
+  text-align: center;
+
+  background-color: #ffffff;
+  border: 2px solid #e7e7e7;
+  &--active {
+    background-image: url("../img/active.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  &--noactive {
+    background-image: url("../img/noactive.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.price__name {
+  width: 137px;
+  padding-left: 15px;
+
+  text-align: left;
+  &--mobile {
+  display: none;
+  }
+}
+.price__control {
+  display: none;
+}
+@media (min-width: @desktop) {
+  .price {
+    padding-bottom: 95px;
+  }
+  .price-wrap {
+    width: 940px;
+  }
+  .price__package {
+    width: 192px;
+    padding: 20px;
+
+    font-size: 18px;
+    & span {
+      font-size: 24px;
+    }
+  }
+  .price__cell {
+    width: 232px;
+
+    line-height: 60px;
+  }
+  .price__name {
+    width: 207px;
+    padding-left: 25px;
+
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+@media (max-width: @tablet) {
+  .price {
+    padding-bottom: 0;
+  }
+  .price-wrap {
+    position: relative;
+
+    width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .price__table {
+    position: relative;
+    left: -258px;
+
+    width: 836px;
+  }
+  .price__package {
+    width: 236px;
+    padding: 20px;
+
+    font-size: 18px;
+    & span {
+      font-size: 24px;
+    }
+    &--clean {
+      display: none;
+    }
+  }
+  .price__cell {
+    width: 276px;
+    &--active,
+    &--noactive {
+      background-position: 230px center;
+    }
+  }
+  .price__name {
+    display: none;
+    &--mobile {
+      display: block;
+      padding-left: 20px;
+
+      line-height: 44px;
+      text-align: left;
+      text-transform: uppercase;
+    }
+  }
+  .price__control {
+    display: flex;
+    margin: 0 auto;
+    padding: 40px;
+  }
+}

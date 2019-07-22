@@ -1,0 +1,60 @@
+.button-control {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.button-control__btn {
+  position: relative;
+
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+
+  background-color: transparent;
+  border: none;
+  opacity: 0.3;
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+  &:active {
+    opacity: 0.1;
+  }
+  &::after,
+  &::before {
+    content: "";
+
+    position: absolute;
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #7e868f;
+  }
+  &--next {
+    &::after {
+      top: 4px;
+      right: 0;
+      transform: rotate(45deg);
+    }
+    &::before {
+      bottom: 4px;
+      right: 0;
+      transform: rotate(-45deg);
+    }
+  }
+  &--previous {
+    &::after {
+      top: 4px;
+      left: 0;
+      transform: rotate(-45deg);
+    }
+    &::before {
+      bottom: 4px;
+      left: 0;
+      transform: rotate(45deg);
+    }
+  }
+}

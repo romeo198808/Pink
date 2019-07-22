@@ -105,42 +105,44 @@
           <li class="slider__control__item"><button type="button" class="slider__toggle"></button></li>
         </ul>
         <ul class="reviews__button-control button-control">
-          <li class="button-control__item"><button type="button" class="button-control__item--next"><span class="visually-hidden">Следующий</span></button></li>
-          <li class="button-control__item"><button type="button" class="button-control__item--previous"><span class="visually-hidden">Предыдущий</span></button></li>
+          <li class="button-control__item button-control__item--next"><button type="button" class="button-control__btn button-control__btn--next"><span class="visually-hidden">Следующий</span></button></li>
+          <li class="button-control__item button-control__item--previous"><button type="button" class="button-control__btn button-control__btn--previous"><span class="visually-hidden">Предыдущий</span></button></li>
         </ul>
       </article>
 
       <section class="price">
         <h2 class="visually-hidden">Наш прайс-лист</h2>
-        <table class="price__table">
+        <div class="price-wrap">
+          <table class="price__table">
           <tr>
             <th class="price__package price__package--clean"></th>
-            <th class="price__package">База 1,99 USD</th>
-            <th class="price__package price__package--new">Стандарт 3,99 USD</th>
-            <th class="price__package">Анлим 9,99 USD</th>
+            <th class="price__package">База <span>1,99 USD</span></th>
+            <th class="price__package price__package--new">Стандарт <span>3,99 USD</span></th>
+            <th class="price__package">Анлим <span>9,99 USD</span></th>
           </tr>
           <tr>
             <td class="price__cell price__name">Розовый фильтр</td>
-            <td class="price__cell price__cell--activ"><span class="price__name--mobile">Розовый фильтр</span></td>
-            <td class="price__cell price__cell--activ"><span class="price__name--mobile">Розовый фильтр</span></td>
-            <td class="price__cell price__cell--activ"><span class="price__name--mobile">Розовый фильтр</span></td>
+            <td class="price__cell price__cell--active"><span class="price__name--mobile">Розовый фильтр</span></td>
+            <td class="price__cell price__cell--active"><span class="price__name--mobile">Розовый фильтр</span></td>
+            <td class="price__cell price__cell--active"><span class="price__name--mobile">Розовый фильтр</span></td>
           </tr>
           <tr>
             <td class="price__cell price__name">Смайлики</td>
-            <td class="price__cell price__cell--noactiv"><span class="pricee__name--mobile">Смайлики</span></td>
-            <td class="price__cell price__cell--activ"><span class="price__name--mobile">Смайлики</span></td>
-            <td class="price__cell price__cell--activ"><span class="price__name--mobile">Смайлики</span></td>
+            <td class="price__cell price__cell--noactive"><span class="price__name--mobile">Смайлики</span></td>
+            <td class="price__cell price__cell--active"><span class="price__name--mobile">Смайлики</span></td>
+            <td class="price__cell price__cell--active"><span class="price__name--mobile">Смайлики</span></td>
           </tr>
           <tr>
             <td class="price__cell price__name">Комментарии</td>
-            <td class="price__cell price__cell--noactiv"><span class="pricee__name--mobile">Комментарии</span></td>
-            <td class="price__cell price__cell--noactiv"><span class="price__name--mobile">Комментарии</span></td>
-            <td class="price__cell price__cell--activ"><span class="price__name--mobile">Комментарии</span></td>
+            <td class="price__cell price__cell--noactive"><span class="price__name--mobile">Комментарии</span></td>
+            <td class="price__cell price__cell--noactive"><span class="price__name--mobile">Комментарии</span></td>
+            <td class="price__cell price__cell--active"><span class="price__name--mobile">Комментарии</span></td>
           </tr>
         </table>
+        </div>
         <ul class="price__control slider__control">
-            <li class="slider__control__item"><button type="button" class="slider__toggle slider__toggle--1 slider__toggle--active"></button></li>
-            <li class="slider__control__item"><button type="button" class="slider__toggle slider__toggle--2"></button></li>
+            <li class="slider__control__item"><button type="button" class="slider__toggle slider__toggle--1"></button></li>
+            <li class="slider__control__item"><button type="button" class="slider__toggle slider__toggle--2 slider__toggle--active"></button></li>
             <li class="slider__control__item"><button type="button" class="slider__toggle slider__toggle--3"></button></li>
           </ul>
       </section>

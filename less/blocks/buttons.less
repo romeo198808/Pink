@@ -13,6 +13,15 @@
 
   border: 3px solid #ffffff;
   border-radius: 24px;
+  &:hover,
+  &:focus {
+    color: @color-hover;
+
+    background-color: #ffffff;
+  }
+  &:active span {
+    opacity: 0.3;
+  }
 }
 @media (max-width: @tablet) {
   .button {

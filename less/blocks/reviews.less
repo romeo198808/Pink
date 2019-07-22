@@ -10,7 +10,7 @@
   list-style: none;
 }
 .reviews__item {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
 
@@ -20,6 +20,9 @@
 
   text-align: center;
   font-weight: 400;
+  &--show {
+    display: flex;
+  }
 }
 .reviews__author {
   font-size: 18px;

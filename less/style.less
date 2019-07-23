@@ -5,6 +5,13 @@
 @mobile: 320px;
 @retina-dpi: 144dpi;
 @retina-dppx: 1.5dppx;
+.placeholder() {
+  &::-webkit-input-placeholder {color: @color-basic; font-size: 18px;}
+  &::-moz-placeholder          {color: @color-basic; font-size: 18px;}
+  &:-moz-placeholder           {color: @color-basic; font-size: 18px;}
+  &:-ms-input-placeholder      {color: @color-basic; font-size: 18px;}
+
+}
 
 @import "global.less";
 @import "blocks/buttons.less";
@@ -22,3 +29,8 @@
 @import "blocks/price.less";
 @import "blocks/contacts.less";
 @import "blocks/page-footer.less";
+@import "blocks/journey.less";
+@import "blocks/form.less";
+@import "blocks/form-name.less";
+@import "blocks/form-progress.less";
+@import "blocks/form-contacts.less";

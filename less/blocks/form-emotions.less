@@ -1,0 +1,47 @@
+.form__group-emotions {
+  width: 276px;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  border: none;
+  & .form__label {
+    text-align: center;
+  }
+  & textarea {
+    width: 236px;
+    min-height: 160px;
+    margin-top: 15px;
+    padding: 20px;
+
+    .placeholder();
+    font-size: inherit;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
+}
+@media (min-width: @tablet) {
+  .form__group-emotions {
+    width: 492px;
+    padding: 50px 60px;
+    margin-top: 55px;
+    order: 5;
+
+    border: 2px solid #e5e5e5;
+    & textarea {
+      width: 452px;
+      min-height: 150px;
+      margin: 0;
+    }
+  }
+}
+@media (min-width: @desktop) {
+  .form__group-emotions {
+    width: 812px;
+    padding: 40px 60px;
+    & textarea {
+      width: 772px;
+      min-height: 85px;
+    }
+  }
+}

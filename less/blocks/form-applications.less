@@ -1,0 +1,58 @@
+.form__container-applications {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+}
+.form__group-applications {
+  border: none;
+  & .form__label {
+    width: 200px;
+    margin: 0 auto;
+
+    text-align: center;
+    line-height: 20px;
+  }
+}
+.form__group-applications--wrap {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 40px;
+  & p {
+    margin: 0;
+    margin-top: 37px;
+  }
+}
+@media (min-width: @tablet) {
+  .form__container-applications {
+    background-color: #ffffff;
+    padding: 0;
+    order: 2;
+  }
+  .form__group-applications {
+    width: 556px;
+    margin: 0 auto;
+    margin-top: 55px;
+    padding-left: 60px;
+    padding-bottom: 55px;
+
+    border: 2px solid #e5e5e5;
+    & .form__label {
+      width: auto;
+    }
+  }
+  .form__group-applications--wrap {
+    margin: 0;
+    margin-top: 40px;
+  }
+}
+@media (min-width: @desktop) {
+  .form__container-applications {
+    width: 435px;
+  }
+  .form__group-applications {
+    width: 356px;
+    margin: 0;
+    margin-top: 7px;
+    padding-left: 75px;
+    padding-bottom: 55px;
+  }
+}

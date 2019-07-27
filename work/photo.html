@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Фотографии пользователей</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
 
@@ -37,8 +38,18 @@
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
         <div class="photo__wrap">
-          <figure class="box">
-            <img src="" alt="Панорама дня" class="box__img">
+          <figure class="box box--panorama">
+            <picture>
+              <source type="image/webp" media="(min-width: 1100px)" srcset="img/panorama-desktop.webp, img/panorama-desktop2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet.webp, img/panorama-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/panorama-mobile.webp, img/panorama-mobile2x.webp 2x">
+              <source media="(min-width: 1100px)" srcset="img/panorama-desktop.jpg, img/panorama-desktop2x.jpg 2x" >
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg, img/panorama-tablet2x.jpg 2x" >
+              <img src="img/panorama-mobile.jpg" srcset="img/panorama-mobile2x.jpg 2x" alt="Панорама дня" class="box__img box__img--panorama">
+            </picture>
+            <div class="panorama-dest">
+              Панорама дня
+            </div>
             <figcaption class="box__description">
               <b class="author">Анна</b>
               <span class="time">(5 минут назад)</span>
@@ -48,7 +59,14 @@
             </figcaption>
           </figure>
           <figure class="box">
-            <img src="" alt="Летчик" class="box__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1100px)" srcset="img/photo-1-desktop.webp, img/photo-1-desktop2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-1-tablet.webp, img/photo-1-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-1-mobile.webp, img/photo-1-mobile2x.webp 2x">
+              <source media="(min-width: 1100px)" srcset="img/photo-1-desktop.jpg, img/photo-1-desktop2x.jpg 2x" >
+              <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg, img/photo-1-tablet2x.jpg 2x" >
+              <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile2x.jpg 2x" alt="Летчик" class="box__img">
+            </picture>
             <figcaption class="box__description">
               <b class="author">Левон</b>
               <span class="time">(5 часов назад)</span>
@@ -58,7 +76,14 @@
             </figcaption>
           </figure>
           <figure class="box">
-            <img src="" alt="Барабаны" class="box__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1100px)" srcset="img/photo-2-desktop.webp, img/photo-2-desktop2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-2-tablet.webp, img/photo-2-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-2-mobile.webp, img/photo-2-mobile2x.webp 2x">
+              <source media="(min-width: 1100px)" srcset="img/photo-2-desktop.jpg, img/photo-2-desktop2x.jpg 2x" >
+              <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg, img/photo-2-tablet2x.jpg 2x" >
+              <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile2x.jpg 2x" alt="Барабаны" class="box__img">
+            </picture>
             <figcaption class="box__description">
               <b class="author">Антон</b>
               <span class="time">(12 часов назад)</span>
@@ -68,7 +93,14 @@
             </figcaption>
           </figure>
           <figure class="box">
-            <img src="" alt="Небо" class="box__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1100px)" srcset="img/photo-3-desktop.webp, img/photo-3-desktop2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-3-tablet.webp, img/photo-3-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-3-mobile.webp, img/photo-3-mobile2x.webp 2x">
+              <source media="(min-width: 1100px)" srcset="img/photo-3-desktop.jpg, img/photo-3-desktop2x.jpg 2x" >
+              <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg, img/photo-3-tablet2x.jpg 2x" >
+              <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile2x.jpg 2x" alt="Небо" class="box__img">
+            </picture>
             <figcaption class="box__description">
               <b class="author">Борис</b>
               <span class="time">(20 часов назад)</span>
@@ -78,7 +110,14 @@
             </figcaption>
           </figure>
           <figure class="box">
-            <img src="" alt="Кубань" class="box__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1100px)" srcset="img/photo-4-desktop.webp, img/photo-4-desktop2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-4-tablet.webp, img/photo-4-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-1-mobile.webp, img/photo-1-mobile2x.webp 2x">
+              <source media="(min-width: 1100px)" srcset="img/photo-4-desktop.jpg, img/photo-4-desktop2x.jpg 2x" >
+              <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg, img/photo-4-tablet2x.jpg 2x" >
+              <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile2x.jpg 2x" alt="Кубань" class="box__img">
+            </picture>
             <figcaption class="box__description">
               <b class="author">Сергей</b>
               <span class="time">(25 часов назад)</span>
@@ -88,7 +127,14 @@
             </figcaption>
           </figure>
           <figure class="box">
-            <img src="" alt="Где снег" class="box__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1100px)" srcset="img/photo-5-desktop.webp, img/photo-5-desktop2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-5-tablet.webp, img/photo-5-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-5-mobile.webp, img/photo-5-mobile2x.webp 2x">
+              <source media="(min-width: 1100px)" srcset="img/photo-5-desktop.jpg, img/photo-5-desktop2x.jpg 2x" >
+              <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg, img/photo-5-tablet2x.jpg 2x" >
+              <img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile2x.jpg 2x" alt="Где снег?" class="box__img">
+            </picture>
             <figcaption class="box__description">
               <b class="author">Максим</b>
               <span class="time">(40 часов назад)</span>
@@ -98,7 +144,14 @@
             </figcaption>
           </figure>
           <figure class="box">
-            <img src="" alt="Крыло самолёта" class="box__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1100px)" srcset="img/photo-6-desktop.webp, img/photo-6-desktop2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-6-tablet.webp, img/photo-6-tablet2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-6-mobile.webp, img/photo-6-mobile2x.webp 2x">
+              <source media="(min-width: 1100px)" srcset="img/photo-6-desktop.jpg, img/photo-6-desktop2x.jpg 2x" >
+              <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg, img/photo-6-tablet2x.jpg 2x" >
+              <img src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile2x.jpg 2x" alt="Крыло самолета" class="box__img">
+            </picture>
             <figcaption class="box__description">
               <b class="author">Надежда</b>
               <span class="time">(45 часов назад)</span>

@@ -1902,7 +1902,7 @@ img {
 }
 .photo__text {
   width: 270px;
-  margin: 50px auto 50px;
+  margin: 50px auto 30px;
   font-size: 16px;
   font-weight: 400;
   text-align: center;
@@ -1926,7 +1926,7 @@ img {
   .photo__text {
     width: 470px;
     margin-top: 95px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     font-size: 18px;
   }
 }
@@ -1950,5 +1950,151 @@ img {
 @media (min-width: 1100px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 1100px) and (min-resolution: 144dpi), (min-width: 1100px) and (min-resolution: 1.5dppx) {
   .photo__title-wrap {
     background-image: url("../img/back-desktop2x.jpg");
+  }
+}
+.photo__wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+.box {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  background-color: #f2f2f2;
+}
+.box picture {
+  vertical-align: middle;
+}
+.box .panorama-dest {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 140px;
+  height: 35px;
+  font-size: 12px;
+  line-height: 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #d22856;
+}
+.box__img {
+  width: 280px;
+}
+.box__img--panorama {
+  width: 320px;
+  margin-top: -30px;
+  margin-left: -20px;
+}
+.box__description {
+  padding: 18px;
+  padding-bottom: 0;
+  margin-top: -10px;
+}
+.box__description .time {
+  color: #505c68;
+}
+.box__text {
+  margin: 0;
+  line-height: 24px;
+}
+.like-button {
+  position: absolute;
+  left: 18px;
+  bottom: 25px;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url("../img/like-button.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+}
+.like {
+  position: absolute;
+  bottom: 22px;
+  display: inline-block;
+  margin-top: 15px;
+  padding-left: 30px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+@media (min-width: 660px) {
+  .photo__wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+  .box {
+    margin: 0;
+    margin-top: 20px;
+    width: 300px;
+  }
+  .box--panorama {
+    width: 620px;
+    margin-bottom: 30px;
+  }
+  .box .panorama-dest {
+    top: 60px;
+  }
+  .box__img {
+    width: 300px;
+  }
+  .box__img--panorama {
+    width: 660px;
+  }
+  .box__description {
+    padding: 25px;
+    padding-bottom: 0;
+  }
+  .like-button {
+    left: 255px;
+    bottom: 24px;
+  }
+  .like {
+    padding-left: 0;
+  }
+}
+@media (min-width: 1100px) {
+  .photo__wrap {
+    width: 940px;
+  }
+  .box {
+    margin-top: 50px;
+  }
+  .box--panorama {
+    width: 940px;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-bottom: 25px;
+  }
+  .box--panorama .like-button {
+    left: 890px;
+    bottom: 60px;
+  }
+  .box--panorama .like {
+    left: 775px;
+    bottom: 58px;
+  }
+  .box .panorama-dest {
+    top: 55px;
+  }
+  .box__img--panorama {
+    width: 1200px;
+    margin-left: -130px;
   }
 }

@@ -272,7 +272,7 @@ img {
 }
 .developed {
   position: relative;
-  width: 155px;
+  width: 140px;
   height: 34px;
   margin: 0;
   padding-left: 5px;
@@ -283,6 +283,7 @@ img {
 .developed__link {
   position: absolute;
   top: 5px;
+  right: 5px;
   display: inline-block;
   width: 27px;
   height: 34px;
@@ -295,6 +296,19 @@ img {
 }
 .developed__link:active {
   opacity: 0.3;
+}
+@media (min-width: 660px) {
+  .developed {
+    width: 130px;
+  }
+  .developed__link {
+    right: 0;
+  }
+}
+@media (min-width: 1100px) {
+  .developed {
+    width: 160px;
+  }
 }
 .page-header {
   position: absolute;

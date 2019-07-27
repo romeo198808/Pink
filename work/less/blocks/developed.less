@@ -1,7 +1,7 @@
 .developed {
   position: relative;
 
-  width: 155px;
+  width: 140px;
   height: 34px;
   margin: 0;
   padding-left: 5px;
@@ -13,6 +13,7 @@
 .developed__link {
   position: absolute;
   top: 5px;
+  right: 5px;
   display: inline-block;
   width: 27px;
   height: 34px;
@@ -24,5 +25,18 @@
   }
   &:active {
     opacity: 0.3;
+  }
+}
+@media (min-width: @tablet) {
+  .developed {
+    width: 130px;
+  }
+  .developed__link {
+    right: 0;
+  }
+}
+@media (min-width: @desktop) {
+  .developed {
+    width: 160px;
   }
 }

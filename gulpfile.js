@@ -30,9 +30,15 @@ gulp.task("style", async function() {
     .pipe(gulp.dest("work/css"))
     .pipe(server.stream());
 });
+gulp.task("normalize", function() {
+return gulp.src("work/css/normalize.css")
+ .pipe(csso())
+ .pipe(rename("normalize.min.css"))
+ .pipe(gulp.dest("work/css"));
+});
 gulp.task("clean", async function() {
   return del("build");
-})
+});
 gulp.task("copy", async function() {
   return gulp.src([
     "work/fonts/**/*",
@@ -78,4 +84,4 @@ gulp.task("serve", async function() {
   gulp.watch("work/img/**/*.{jpg,png}", gulp.series("cwebp")).on("change", server.reload);
 });
 gulp.task("go", gulp.series("style", "cwebp", "serve"));
-gulp.task("build", gulp.series("clean", "style", "copy", "html", "imagemin", "cwebp"));
+gulp.task("build", gulp.series("clean", "style", "normalize", "copy", "html", "imagemin", "cwebp"));

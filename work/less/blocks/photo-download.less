@@ -1,0 +1,219 @@
+.download__text {
+  width: 280px;
+  margin: 40px auto;
+
+  text-align: center;
+}
+.photo-download__wrap {
+  background-color: #f2f2f2;
+  padding-top: 20px;
+}
+.download__img {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+}
+.download__editor {
+  position: relative;
+
+  display: flex;
+  width: 240px;
+  margin: 0 auto;
+
+}
+.editor__button-wrap {
+  width: 80px;
+
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 75px;
+  & input {
+    display: none;
+  }
+  & label {
+    display: block;
+    height: 44px;
+
+    text-align: center;
+  }
+}
+
+.editor__button-wrap--active {
+  & .svg {
+    fill: @color-hover;
+  }
+  & input {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+
+    display: inline-block;
+    width: 180px;
+  }
+}
+input[type=range] {
+  -webkit-appearance: none;
+  outline: none;
+}
+input[type=range] {
+  &::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 2px;
+    background-color: @color-basic;
+  }
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    margin-top: -4px;
+
+    background-color: #ffffff;
+    border: 2px solid @color-hover;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+.download__buttons {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  border-top: 1px solid #dddfe0;
+}
+.download__button {
+  background-color: transparent;
+  &--post {
+    margin-bottom: 12px;
+
+    border-color: @color-hover;
+    color: @color-hover;
+    line-height: 40px;
+    &:hover,
+    &:focus {
+      background-color: @color-hover;
+      color: #ffffff;
+    }
+    &:active span {
+      opacity: 0.3;
+    }
+  }
+  &--cansel {
+    border-color: @color-basic;
+    color: @color-basic;
+    line-height: 40px;
+    opacity: 0.1;
+    &:hover,
+    &:focus {
+      opacity: 0.3;
+      color: @color-basic;
+    }
+    &:active {
+      background-color: @color-basic;
+      color: #ffffff;
+    }
+  }
+}
+@media (min-width: @tablet) {
+  .download__text {
+    width: 620px;
+    margin: 65px auto;
+
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .photo-download__wrap {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    & .wrap {
+      display: flex;
+      justify-content: space-between;
+      width: 620px;
+      margin: 0 auto;
+    }
+  }
+  .download__img {
+    width: 300px;
+  }
+  .download__editor {
+    display: block;
+    width: 275px;
+    margin: 0;
+  }
+  .editor__button-wrap {
+    display: flex;
+    width: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    border-bottom: 1px solid #dddfe0;
+    & input {
+      position: inherit;
+      display: inline-block;
+      margin-left: 22px;
+      width: 200px;
+      height: 22px;
+      background-color: transparent;
+    }
+    & label svg {
+      width: 22px;
+      height: 22px;
+    }
+    & .svg {
+      fill: @color-hover;
+    }
+  }
+  .download__buttons {
+    padding: 0;
+    border: none;
+    margin-top: 65px;
+  }
+  .download__button {
+    width: 254px;
+    &--cansel {
+      margin-top: 27px;
+    }
+  }
+}
+@media (min-width: @desktop) {
+ .photo-download__wrap {
+   width: 940px;
+   margin: 0 auto;
+   & .wrap {
+     width: 800px;
+     }
+ }
+ .download__editor {
+   width: 410px;
+ }
+ .editor__button-wrap {
+   margin: 0;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   & label svg {
+     width: 44px;
+     height: auto;
+   }
+   & .contrast {
+     width: 32px;
+     height: 32px;
+     margin-top: 5px;
+     margin-left: 10px;
+   }
+   & input {
+     margin-left: 45px;
+     width: 290px;
+     height: 45px;
+   }
+ }
+ .download__buttons {
+   display: flex;
+   justify-content: space-between;
+   width: 410px;
+   margin-top: 155px;
+ }
+ .download__button {
+   margin: 0;
+   width: 178px;
+ }
+}

@@ -2101,3 +2101,212 @@ img {
     margin-left: -130px;
   }
 }
+.download__text {
+  width: 280px;
+  margin: 40px auto;
+  text-align: center;
+}
+.photo-download__wrap {
+  background-color: #f2f2f2;
+  padding-top: 20px;
+}
+.download__img {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+}
+.download__editor {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  width: 240px;
+  margin: 0 auto;
+}
+.editor__button-wrap {
+  width: 80px;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 75px;
+}
+.editor__button-wrap input {
+  display: none;
+}
+.editor__button-wrap label {
+  display: block;
+  height: 44px;
+  text-align: center;
+}
+.editor__button-wrap--active .svg {
+  fill: #d22856;
+}
+.editor__button-wrap--active input {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  display: inline-block;
+  width: 180px;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 2px;
+  background-color: #283645;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  margin-top: -4px;
+  background-color: #ffffff;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.download__buttons {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid #dddfe0;
+}
+.download__button {
+  background-color: transparent;
+}
+.download__button--post {
+  margin-bottom: 12px;
+  border-color: #d22856;
+  color: #d22856;
+  line-height: 40px;
+}
+.download__button--post:hover,
+.download__button--post:focus {
+  background-color: #d22856;
+  color: #ffffff;
+}
+.download__button--post:active span {
+  opacity: 0.3;
+}
+.download__button--cansel {
+  border-color: #283645;
+  color: #283645;
+  line-height: 40px;
+  opacity: 0.1;
+}
+.download__button--cansel:hover,
+.download__button--cansel:focus {
+  opacity: 0.3;
+  color: #283645;
+}
+.download__button--cansel:active {
+  background-color: #283645;
+  color: #ffffff;
+}
+@media (min-width: 660px) {
+  .download__text {
+    width: 620px;
+    margin: 65px auto;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .photo-download__wrap {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+  .photo-download__wrap .wrap {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
+  }
+  .download__img {
+    width: 300px;
+  }
+  .download__editor {
+    display: block;
+    width: 275px;
+    margin: 0;
+  }
+  .editor__button-wrap {
+    display: -webkit-box;
+    display: flex;
+    width: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #dddfe0;
+  }
+  .editor__button-wrap input {
+    position: inherit;
+    display: inline-block;
+    margin-left: 22px;
+    width: 200px;
+    height: 22px;
+    background-color: transparent;
+  }
+  .editor__button-wrap label svg {
+    width: 22px;
+    height: 22px;
+  }
+  .editor__button-wrap .svg {
+    fill: #d22856;
+  }
+  .download__buttons {
+    padding: 0;
+    border: none;
+    margin-top: 65px;
+  }
+  .download__button {
+    width: 254px;
+  }
+  .download__button--cansel {
+    margin-top: 27px;
+  }
+}
+@media (min-width: 1100px) {
+  .photo-download__wrap {
+    width: 940px;
+    margin: 0 auto;
+  }
+  .photo-download__wrap .wrap {
+    width: 800px;
+  }
+  .download__editor {
+    width: 410px;
+  }
+  .editor__button-wrap {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .editor__button-wrap label svg {
+    width: 44px;
+    height: auto;
+  }
+  .editor__button-wrap .contrast {
+    width: 32px;
+    height: 32px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .editor__button-wrap input {
+    margin-left: 45px;
+    width: 290px;
+    height: 45px;
+  }
+  .download__buttons {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    width: 410px;
+    margin-top: 155px;
+  }
+  .download__button {
+    margin: 0;
+    width: 178px;
+  }
+}
